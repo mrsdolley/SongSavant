@@ -1,0 +1,47 @@
+<h1>Song Savant</h1>
+
+<div id="img">
+
+    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+
+</div>
+
+<div class='form'>
+  <form name="form" id="form">
+    <div id="song-entry">
+      <input type="text" id="song-input" name='playerName' placeholder='Enter Song Title' ng-model='$ctrl.songTitle'> 
+      <button id= "submit" class= "btn-hover color-11" ng-click='$ctrl.submit()'> Submit </button> 
+    </div> 
+  </form>
+</div>
+
+<div class="container">
+  <div class="incorrect" ng-if="$ctrl.showAnswer">
+      <span ng-if='$ctrl.songTitle.toLowerCase()===$ctrl.selectedTrack.name.toLowerCase()'>
+        <span><h4>Correct!</h4></span><p>Way to be in tune.</p>
+      </span>
+
+      <span ng-if='$ctrl.songTitle.toLowerCase()!==$ctrl.selectedTrack.name.toLowerCase()'>
+        <span><h4>Sorry!</h4></span><p>That's incorrect, this is <b><u>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</u></b></p>
+      </span>
+  </div>
+
+  <span ng-if='$ctrl.countDown === 0'>
+    <p>Out of time! <b><u>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</u></b> was the song.</p> 
+  </span>
+</div>
+
+
+<!-- <div>
+  <span ng-if='$ctrl.countDown === 0'>
+    <p>Out of time! <b>{{$ctrl.selectedTrack.name}} - {{$ctrl.selectedTrack.album.artists[0].name}}</b> was the song.</p> 
+  </span>
+</div> -->
+
+<h1>Timer: {{$ctrl.countDown}}</h1>
+
+<div class="audio-container">
+  <audio src="{{$ctrl.selectedTrack.preview_url}}" controls="controls" autoplay="autoplay"></audio>
+</div>
+
+<h3 class='songCount'>Track {{$ctrl.numSong}} of 5</h3>

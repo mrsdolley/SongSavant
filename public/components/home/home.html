@@ -1,0 +1,37 @@
+<h1>Song Savant</h1>
+
+<div id="img">
+    <img id="musicImg" src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?cs=srgb&dl=audio-business-computer-257904.jpg&fm=jpg">
+</div>
+
+<div class='form'>
+    <form id="form">
+        <h2>Enter Player Name:</h2>
+        <input type="text" id="username" ng-model='$ctrl.playerName'>
+    </form>
+</div>
+
+<h2 id="header">Select a genre and get ready to test your skills!</h2>
+
+<div class="explicit">
+    <p id="explicit">* May contain explicit language</p>
+</div>
+
+<div id="category">
+    <div class="buttons">
+    <div id="cat1">
+        <button id="pop" class="btn-hover color-1 items" ng-click="$ctrl.setCategory('37i9dQZF1DXcBWIGoYBM5M')"><h2>Pop*</h2></button>
+        <button id="country" class="btn-hover color-2 items" ng-click="$ctrl.setCategory('37i9dQZF1DX1lVhptIYRda')"><h2>Country</h2></button>
+        <button id="RnB" class="btn-hover color-3 items"  ng-click="$ctrl.setCategory('37i9dQZF1DX4SBhb3fqCJd')"><h2>R&B*</h2></button>
+    </div>
+    <div id="cat2">
+        <button id="decades00s" class="btn-hover color-4" ng-click="$ctrl.setCategory('37i9dQZF1DX4o1oenSJRJd')"><h2>00's*</h2></button>
+        <button id="rock" class="btn-hover color-5" ng-click="$ctrl.setCategory('37i9dQZF1DWXRqgorJj26U')"><h2>Rock</h2></button>
+        <button id="hipHop" class="btn-hover color-6" ng-click="$ctrl.setCategory('37i9dQZF1DX0XUsuxWHRQd')"><h2>Hip-Hop*</h2></button>
+    </div>
+    <div id="cat3">
+        <button id="decades90s" class="btn-hover color-7" ng-click="$ctrl.setCategory('37i9dQZF1DXbTxeAdrVG2l')"><h2>90's*</h2></button>
+        <button id="decades80s" class="btn-hover color-8" ng-click="$ctrl.setCategory('37i9dQZF1DX1spT6G94GFC')"><h2>80's</h2></button>
+        <button id="decades70s" class="btn-hover color-9" ng-click="$ctrl.setCategory('37i9dQZF1DWTJ7xPn4vNaz')"><h2>70's</h2></button>
+    </div>
+</div>

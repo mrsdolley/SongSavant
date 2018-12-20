@@ -1,0 +1,31 @@
+{
+  "name": "Name-That-Tune",
+  "version": "1.0.0",
+  "description": "",
+  "main": "proxy-server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node proxy-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfili8/Name-That-Tune.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfili8/Name-That-Tune/issues"
+  },
+  "homepage": "https://github.com/dfili8/Name-That-Tune#readme"
+}
